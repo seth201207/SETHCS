@@ -1,0 +1,15 @@
+import random
+numberguess = random.randrange(0,100)
+running = True
+
+while running:
+    choice = int(input("What number do you think it is"))
+    if choice < numberguess:
+        print("The number is greater")
+    if choice > numberguess:
+        print("The number is lower")
+    if choice == numberguess:
+        print("Correct")
+   running = False
+   
+
