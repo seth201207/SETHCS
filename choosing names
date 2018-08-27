@@ -1,0 +1,17 @@
+import random
+
+running = True
+
+while running:
+    for i in range(1):
+        Choose_Name = ["James","John","Mark","Rick"]
+        chosen = random.choice(Choose_Name)
+        print(chosen)
+
+    choice = str(input("Do you want to keep the name"))
+    if choice == "No":
+        Choose_Name.remove(chosen)
+    if choice == "Yes":
+        Choose_Name.keep(chosen)
+        running = False
+
