@@ -1,0 +1,21 @@
+def twos(twos):
+    if len(twos)!=8:
+        print("Invalid length")
+ 
+    for i in twos:
+            if int(i) > 1:
+                print("invalid value")
+ 
+    if twos[0]=="1":
+        print("negative twos complement")
+        twos = int(twos, 2)
+        decimal = 256 - twos
+        final_num = -decimal
+        return(final_num)
+ 
+    else:
+        print("positive twos complement")
+        number = int(twos,2)
+        return(number)
+ 
+print(twos("11110011"))
