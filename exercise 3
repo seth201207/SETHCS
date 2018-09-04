@@ -1,0 +1,21 @@
+statement = "We love Python's turtles!"
+for i in range (1000):
+    print(statement)
+
+for f in ["January", "February", "March", "April", "May", "June", "July"]:
+    years = "One of the months of the year is " + f
+    print(years)
+
+#Assume you have the assignment xs = [12, 10, 32, 3, 66, 17, 42, 99, 20]
+# Write a loop that prints each of the numbers on a new line.
+#Write a loop that prints each number and its square on a new line.
+#Write a loop that adds all the numbers from the list into a variable called total. You should set the total variable to have the value 0 before you start adding them up, and print the value in total after the loop has completed.
+#Print the product of all the numbers in the list. (product means all multiplied together)
+
+#for f in [12, 10, 32, 3, 66, 17, 42, 99 ,20]:
+    #xs = f
+    #print(xs)
+
+for f in [12, 10, 32, 3, 66, 17, 42, 99 ,20]:
+    vs = int(f + 'f**')
+    print(vs)
