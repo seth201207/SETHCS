@@ -29,3 +29,71 @@ total = 1
 for f in [12, 10, 32, 3, 66, 17, 42, 99 ,20]:
     total = f*total
     print(total)
+
+import turtle
+wn = turtle.Screen()
+alex = turtle.Turtle()
+for i in range(3):
+    alex.forward(100)
+    alex.left(120)
+wn.mainloop()
+
+
+import turtle
+mn = turtle.Screen()
+tess = turtle.Turtle()
+for i in range(4):
+    tess.forward(100)
+    tess.right(90)
+mn.mainloop()
+
+
+import turtle
+cn = turtle.Screen()
+jack = turtle.Turtle()
+for i in range(6):
+    jack.forward(100)
+    jack.left(60)
+cn.mainloop()
+
+
+import turtle
+cn = turtle.Screen()
+dot = turtle.Turtle()
+for i in range(9):
+    dot.forward(100)
+    dot.left([160, -43, 270, -97, -43, 200, -940, 17, -86])
+cn.mainloop()
+
+import turtle
+cn = turtle.Screen()
+dot = turtle.Turtle()
+
+pirate = [160, -43, 270, -97, -43, 200, -940, 17, -86]
+for i in pirate:
+    dot.forward(100)
+    dot.left(i)
+cn.mainloop()
+
+
+total = 0
+for i in [160, -43, 270, -97, -43, 200, -940, 17, -86]:
+    total = total + i
+    print(total)
+
+import turtle
+wn = turtle.Screen()
+alex = turtle.Turtle()
+for i in range(18):
+    alex.forward(100)
+    alex.left(20)
+wn.mainloop()
+
+import turtle
+wn = turtle.Screen()
+alex = turtle.Turtle()
+for i in range (5):
+    alex.right(144)
+    alex.forward(100)
+wn.mainloop()
+
