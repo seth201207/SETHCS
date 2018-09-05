@@ -19,3 +19,40 @@ for i in range (4):
     alex.forward(75)
     alex.pendown()
 wn.mainloop()
+
+
+import turtle
+
+def draw_square(t, sz):
+    """Make turtle t draw a multi-color square of sz."""
+    for i in range (4):
+        t.forward(sz)
+        t.left(90)
+
+wn = turtle.Screen()        # Set up the window and its attributes
+wn.bgcolor("lightgreen")
+
+tess = turtle.Turtle()
+turtle.color("purple")# Create tess and set some attributes
+
+size = 20
+
+tess.pensize(2)
+
+
+
+for i in range (4):
+    tess.color("purple")
+    draw_square(tess, size)
+
+    size = size + 20
+    tess.penup()
+    tess.right(90)
+    tess.forward(10)
+    tess.right(90)
+    tess.forward(10)
+    tess.right(180)
+    tess.pendown()
+
+
+wn.mainloop()
