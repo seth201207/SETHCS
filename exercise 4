@@ -56,3 +56,24 @@ for i in range (4):
 
 
 wn.mainloop()
+
+
+import turtle
+
+
+def draw_poly(t, n, sz):
+    """Make turtle t draw a square of sz."""
+    for i in range(8):
+        t.forward(sz)
+        t.left(45)
+
+
+wn = turtle.Screen()  # Set up the window and its attributes
+wn.bgcolor("lightgreen")
+
+alex = turtle.Turtle()  # Create alex
+alex.color("purple")
+alex.pensize(3)
+draw_poly(alex, 8, 50)
+
+wn.mainloop()
