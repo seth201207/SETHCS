@@ -77,3 +77,30 @@ alex.pensize(3)
 draw_poly(alex, 8, 50)
 
 wn.mainloop()
+
+
+import turtle
+
+
+def draw_square(t, sz):
+    """Make turtle t draw a square of sz."""
+    for i in range(4):
+        t.forward(sz)
+        t.left(90)
+
+
+wn = turtle.Screen()  # Set up the window and its attributes
+wn.bgcolor("lightgreen")
+wn.title("Alex meets a function")
+alex = turtle.Turtle()
+alex.color("blue")
+alex.pensize(2)
+for i in range(20):
+    draw_square(alex, 50)
+       # Increase the size for next time
+        # Move tess along a little
+    alex.right(18)
+    alex.speed(50)
+  # Create alex
+  # Call the function to draw the square
+wn.mainloop()
