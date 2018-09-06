@@ -104,3 +104,27 @@ for i in range(20):
   # Create alex
   # Call the function to draw the square
 wn.mainloop()
+
+import turtle
+
+wn = turtle.Screen()  # Set up the window and its attributes
+wn.bgcolor("lightgreen")
+wn.title("Alex meets a function")
+
+alex = turtle.Turtle()
+size = 0
+alex.left(180)
+alex.speed(100)
+for i in range (100):
+
+    alex.forward(size+1)
+    size += 1
+    alex.right(90)
+    alex.forward(size+1)
+
+
+
+
+ # Create alex
+     # Call the function to draw the square
+wn.mainloop()
