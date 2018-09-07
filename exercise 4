@@ -160,3 +160,28 @@ draw_squares(alex, 0)
  # Create alex
      # Call the function to draw the square
 wn.mainloop()
+
+
+import turtle
+
+alex = turtle.Turtle()  # Create alex
+alex.color("purple")
+alex.pensize(3)
+
+def draw_poly(t, n, sz):
+    """Make turtle t draw a square of sz."""
+    for i in range(8):
+        t.forward(sz)
+        t.left(45)
+
+def draw_equitriangle(t,sz):
+    draw_poly(t, 3, sz)
+
+
+wn = turtle.Screen()  # Set up the window and its attributes
+wn.bgcolor("lightgreen")
+
+
+draw_poly(t
+
+wn.mainloop()
