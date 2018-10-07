@@ -1,0 +1,27 @@
+days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+
+
+
+#2
+
+a <= b
+a < b
+a < 8  day != 3
+a < 18 day == 3
+
+#3
+3 == 3 : Three is equal to 3
+3 != 3 : 3 is not equal to 3
+3 >= 4 : 3 is greater than or equal to 4
+not (3 < 4) :
+
+#5
+T
+T
+T
+T
+T
+F
+T
+
+#6
