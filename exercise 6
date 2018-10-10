@@ -25,3 +25,91 @@ F
 T
 
 #6
+n = int(input("What are your total marks?"))
+if n >= int(75):
+     print("First")
+elif n >=70 and n <=74:
+     print("Upper Second")
+elif n >= 60 and n<= 69:
+     print("Second")
+elif n >= 50 and n <= 59:
+     print("Third")
+elif n >= 45 and n <= 49:
+     print("F1 Supp")
+elif n >= 40 and n <= 44:
+     print("F2")
+elif n < 40:
+     print("F3")
+
+#7
+#Modify the turtle bar chart program so that the pen is up for the small gaps between each bar.
+import turtle
+def draw_bar(t, height):
+    """ Get turtle t to draw one bar, of height. """
+    t.begin_fill()
+    t.pendown()# Added this line
+    t.left(90)
+    t.forward(height)
+    t.right(90)
+    t.forward(40)
+    t.right(90)
+    t.forward(height)
+    t.left(90)
+    t.penup()
+    t.end_fill()             # Added this line
+    t.forward(10)
+
+wn = turtle.Screen()         # Set up the window and its attributes
+wn.bgcolor("lightgreen")
+
+tess = turtle.Turtle()       # Create tess and set some attributes
+tess.pencolor("blue")
+tess.pensize(3)
+
+xs = [48,117,200,240,160,260,220]
+
+for a in xs:
+    draw_bar(tess, a)
+
+wn.mainloop()
+
+#8
+import turtle
+def draw_bar(t, height):
+    """ Get turtle t to draw one bar, of height. """
+    t.begin_fill()
+    t.left(90)
+    t.forward(height)
+    t.write("  "+ str(height))
+    t.right(90)
+    t.forward(40)
+    t.right(90)
+    t.forward(height)
+    t.left(90)
+               # Added this line
+    t.forward(10)
+
+
+wn = turtle.Screen()         # Set up the window and its attributes
+wn.bgcolor("lightgreen")
+
+tess = turtle.Turtle()       # Create tess and set some attributes
+tess.color("blue", "red")
+tess.pensize(3)
+
+xs = [48,117,200,240,160,260,220]
+
+for a in xs:
+    draw_bar(tess, a)
+
+if xs <= 50:
+    tess.fill("black")
+
+wn.mainloop()
+
+#9
+a = int(input("Side A"))
+b = int(input("Side B"))
+find_hypot = ((a**2+b**2)**0.5)
+print(find_hypot)
+
