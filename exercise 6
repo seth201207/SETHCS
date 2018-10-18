@@ -1,0 +1,11 @@
+#1
+def turn_clockwise(X):
+    if X == "N":
+        print("E")
+    elif X == "E":
+        print("S")
+
+
+turn_clockwise("E")
+
+#2
