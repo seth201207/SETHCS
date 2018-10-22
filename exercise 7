@@ -1,0 +1,140 @@
+EX 1
+numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9) 
+odd = 0
+even = 0
+for x in numbers:
+        if not x % 2:
+    	     even+=1
+        else:
+    	     odd+=1
+print("Number of even numbers :",even)
+print("Number of odd numbers :",odd)
+
+EX 2
+numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9) 
+odd = 0
+even = 0
+for x in numbers:
+        if not x % 2:
+    	     even+=1
+        else:
+    	     odd+=1
+print("Number of even numbers :",even)
+print("Number of odd numbers :",odd)
+
+EX 3
+numbers = (-5,-3,-1,1,3,5) 
+negative=0
+for x in numbers:
+        if x<0:
+    	     negative+=x
+        else:
+            continue
+        
+
+print("Sum up all the negative numbers:",negative)
+
+EX 4
+words = ("yeets","hi","wrong","lol") 
+count=0
+for x in words:
+    if len(x) == 5:
+        count+=1
+    else:
+        continue
+
+print("there are",count,"words with length 5")
+
+EX 5
+numbers = (1,3,5,7,8,14) 
+count=0
+total=0
+for x in numbers:
+    if x%2==0 and count==0:
+        count=1
+    else:
+        total+=x
+        
+print(total)
+
+EX 6
+names = ("ben","dom","harry","sam","seth") 
+count=0
+
+for x in names:
+    if not x=="sam":
+        count+=1
+    else:
+        count+=1
+        break
+    
+print(count)
+
+EX 7
+def sqrt(n):
+        approx = n/2.0
+        better = (approx + n/approx)/2.0
+        while better != approx:
+                approx = better
+                better = (approx + n/approx)/2.0
+                print (better)
+        return approx
+        
+print (sqrt(25))
+
+EX 9
+def print_triangular_numbers(n):
+    x=1
+    while x<=n:
+        trinum=(x*(x+1)) / 2
+        print(trinum)
+        x+=1
+    
+    
+print_triangular_numbers(5)
+
+EX 10
+def is_prime(n):
+    x = n - 1
+    if n < 2:
+        print("false")
+        
+    if n == 2:
+        print("true")
+        
+    while x > 1:
+        if n % x == 0:
+            print("false")
+        else:
+            x -= 1       
+    print("true")  
+    
+is_prime(4)
+
+EX 11
+import turtle
+wn = turtle.Screen()
+alex = turtle.Turtle()
+
+move = [(160, 20), (-43, 10), (270, 8), (-43, 12)]
+
+def pirate(move):
+    for angle,steps in move:
+        alex.forward(steps)
+        alex.right(angle)
+    
+pirate(move)
+
+EX 16
+xs = [2, 3, 4]
+
+def sum_of_squares(xs):
+    sum_of_squares=0 
+    for i in (xs):
+        squared = i * i 
+        sum_of_squares += squared
+    return sum_of_squares
+
+print (sum_of_squares(xs))
+
+sum_of_squares([2, 3, 4])
