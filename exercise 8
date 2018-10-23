@@ -12,4 +12,11 @@ for letter in prefixes:
         print(letter + suffix)
 +
 
-#
+#2
+fruit = "banana"
+count = 0
+for x in fruit:
+        count += 1
+print(count)
+
+#4
