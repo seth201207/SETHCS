@@ -20,3 +20,33 @@ for x in fruit:
 print(count)
 
 #4
+
+
+verse = """
+Venom, (I got that) adrenaline momentum
+And I'm not knowing when I'm
+Ever gonna slow up and I'm
+Ready to snap any moment I'm
+Thinking it's time to go get em
+They ain't gonna know what hit em
+When they get bit with the """
+
+
+
+def remove_punctuation(x):
+    x = verse.split()
+    print(x)
+
+def word_count(y):
+    y = len(remove_punctuation(verse))
+    print(y)
+
+def letter_count(z):
+    count = 0
+    for char in verse:
+        if char == "e":
+            count += 1
+        print(count)
+
+print("Your text contains" + word_count(remove_punctuation(verse)) + "words, of which" + letter_count(remove_punctuation(verse)) + "containing an e")
+
