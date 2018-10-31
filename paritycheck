@@ -1,0 +1,27 @@
+byte1 = ["0", "1", "1", "0", "0", "0", "1", "0"]
+byte2 = ["1", "0", "1", "1", "1", "1", "1", "1"]
+byte3 = ["1", "0", "0", "1", "1", "0", "0", "0"]
+byte4 = ["0", "1", "1", "0", "1", "0", "1", "0"]
+byte5 = ["1", "1", "1", "0", "0", "1", "1", "0"]
+byte6 = ["1", "0", "0", "0", "0", "1", "0", "1"]
+byte7 = ["0", "1", "1", "1", "0", "0", "0", "0"]
+paritybyte = []
+
+
+def parity(x):
+    counter = 0
+
+    for i in x:
+        if i == "1":
+            counter = counter + 1
+        else:
+            if i == "0":
+                continue
+
+    if counter%2 == 0:
+        paritybyte.append(1)
+    if not counter%2:
+            paritybyte.append(0)
+
+    print(paritybyte)
+
