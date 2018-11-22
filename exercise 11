@@ -1,0 +1,10 @@
+#2
+import turtle
+
+tess = turtle.Turtle()
+alex = tess
+alex.color("hotpink")
+
+There remains to be one turtle with the same function however the variable tess can be called by both tess and alex now
+
+#3
