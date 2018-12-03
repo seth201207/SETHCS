@@ -1,0 +1,66 @@
+
+
+a = int(input("Input x: "))
+b = int(input(("Input y: ")))
+
+def add_vectors(u,v):
+    a = int(input("Vector x: "))
+    b = int(input(("Vector y: ")))
+    u = u + a
+    v = v + b
+    print(u,v)
+
+add_vectors(a,b)
+
+
+#6
+
+
+b = int(input(("Input y: ")))
+
+def scalar_vectors(u,v):
+    s = int(input("Input s"))
+    u = u*s
+    v = v*s
+    print(u,v)
+
+scalar_vectors(a,b)
+
+#7
+
+def dot_product(u, v):
+    a = int(input("Vector x"))
+    b = int(input("Vector y"))
+    u = u*a
+    v = v*b
+    total = u + v
+    print(total)
+
+dot_product(4, 5)
+
+#10
+
+def replace(s,old,new):
+    s = new.join(s.split(old))
+    return s
+
+test(replace("Mississippi", "i", "I") == "MIssIssIppI")
+
+s = "I love spom! Spom is my favorite food. Spom, spom, yum!"
+test(replace(s, "om", "am") ==
+    "I love spam! Spam is my favorite food. Spam, spam, yum!")
+
+test(replace(s, "o", "a") ==
+    "I lave spam! Spam is my favarite faad. Spam, spam, yum!")
+
+#11
+def swap(x, y):      # Incorrect version
+    print("before swap statement: x:", x, "y:", y)
+    (x, y) = (y, x)
+    print("after swap statement: x:", x, "y:", y)
+
+a = ["This", "is", "fun"]
+b = [2,3,4]
+print("before swap function call: a:", a, "b:", b)
+swap(a, b)
+print("after swap function call: a:", a, "b:", b)
