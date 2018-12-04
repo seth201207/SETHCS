@@ -1,0 +1,77 @@
+#b
+import calendar
+cal = calendar.TextCalendar(3)      
+cal.pryear(2012)
+
+#c
+import calendar
+cal = calendar.TextCalendar()
+n = int(input("Please enter month of birthday as a number (January = 1,etc): "))
+
+def birthdaymonth(n):
+    cal.prmonth(2012,n)
+
+birthdaymonth(n)
+
+#d
+import calendar
+d = calendar.LocaleTextCalendar(6, "Chinese")
+d.pryear(2012)
+
+
+#b
+import math
+x = 3.333
+print(math.ceil(x))
+#Prints out the largest integer value of x or same value. 
+
+import math
+x = 3.333
+print(math.floor(x))
+#Prints out the smallest integer value of x or same value.
+
+#c
+#Use the power of the number and make it equal to 1/2
+
+#3
+#Deepcopy constructs a new compound object and then, recursively, inserts copies into it of the objects found in the original. 
+
+#4
+import mymodule1
+import mymodule2
+
+print( (mymodule2.myage - mymodule1.myage) ==
+       (mymodule2.year - mymodule1.year)  )
+       
+#6
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+
+#8
+n = "Why? Who said that, nah fam; I don't do nunna that!"
+b = "?,;!"
+def cleanword(n):
+    for i in b:
+        n = n.replace(i, "")
+        print(n)
+
+cleanword(n)
