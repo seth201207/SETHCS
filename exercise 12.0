@@ -75,3 +75,14 @@ def cleanword(n):
         print(n)
 
 cleanword(n)
+
+n = "Why? Who said that, nah fam; I don't do nunna that!"
+
+def extractwords(n):
+    print(n.split())
+extractwords(n)
+
+
+extractwords(n)
+
+
