@@ -1,0 +1,45 @@
+#1
+filereader = open("test.txt", "r")
+while True:
+    theline = filereader.readline()
+    if len(theline) == 0:
+        break
+    print(theline[::-1], end="")
+
+filereader.close()
+
+#2
+def snake(file):
+    snakein = open(file, "r")
+    while True:
+        text = snakein.readline()
+        if len(text) == 0:
+            break
+        if "snake" in text:
+            print(text)
+    snakein.close()
+
+snake("test.txt")
+
+#3
+file_w = open("numbered.txt","w")
+text = file_r.readlines()
+line = []
+for i in range(0, len(text)):
+    line.append(str(i+1))
+    line.append(" ")
+    line.append(text[i])
+print(line)
+file_w.write(''.join(line))
+
+#4
+File1 = open("test.txt1","r")
+File2 = open("test.txt2","w")
+while True:
+    line = str(File1.readline())
+    if len(line) == 0:
+        break
+    File1.write(line[5:])
+
+File1.close()
+File2.close()
