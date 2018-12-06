@@ -1,0 +1,22 @@
+#1
+myfile = open("test.txt", "r")
+xs = myfile.readlines()
+xs.reverse()
+myfile.close()
+
+
+g = open("reverseorder.txt", "w")
+for i in xs:
+    g.write(i)
+
+g.close()
+
+#2
+f = open("snake.txt", "r")
+xs = f.readlines()
+f.close()
+
+for v in xs:
+    if "snake" in v:
+        print(v)
+
