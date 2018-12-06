@@ -20,3 +20,14 @@ for v in xs:
     if "snake" in v:
         print(v)
 
+#2
+f = open("snake.txt", "r")
+while True:
+    xs = f.readline()
+    if len(xs) == 0:
+        break
+
+    if "snake" in xs:
+        print(xs, end="")
+
+f.close()
