@@ -1,0 +1,8 @@
+task 1
+file = open("monster.txt", "r")                  #opens the monster.text fiel to read
+while True:
+    line = file.readline()                       #reads the file and converts lines into a string
+    print(line.split(",")[1])                    #splits a string into a list
+    if len(line) == 0:                           
+        break
+file.close()
