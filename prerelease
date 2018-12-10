@@ -24,3 +24,21 @@ def Monster(file):
     if count != 1:
         print("Monster not found")
 Monster("monsterdatabase.txt")
+
+
+task 3
+def monstercard(file):
+    OpenFile = open(file,"r")
+MonsterLevels = []
+MonsterName = input("Please input the name of the Monster: ")
+MonsterOrigin = input("Please input the origins of the Monster: ")
+MonsterDescription = input("Please input the description of the Monster: ")
+Attack = int(input("Please input the level from 0-30 for the Attack: "))
+MagicForce = int(input("Please input the level from 0-30 for the Magic Force: "))
+MagicDefence = int(input("Please input the level from 0-30 for the Magic Defence: "))
+Defence = int(input("Please input the level from 0-30 for the Defence: "))
+Intelligence = int(input("Please input the level from 0-30 for the Intelligence: "))
+Health = int(input("Please input the level from 0-30 for the Health: "))
+Experience = int(input("Please input the level from 0-30 for the Experience: "))
+print(" Your Monster is:",MonsterName, "Origins:",MonsterOrigin, "Description:",MonsterDescription, "Attack Level:",Attack, "Magic Force Level:",MagicForce,"Magic Defence Level:",MagicDefence,"Defence Level:",Defence,"Intelligence Level:",Intelligence,"Health Level:",Health,"Experience Level:",Experience,)
+monstercard("monsterdatabase.txt")
