@@ -6,3 +6,21 @@ while True:
     if len(line) == 0:                           
         break
 file.close()
+
+
+task2 
+ monstername = input("Enter the Monster you're looking for: ")
+
+def Monster(file):
+    count = 0
+    MonsterFile = open(file, "r")
+    while True:
+        text = MonsterFile.readline()
+        if len(text) == 0:
+            break
+        if MonsterName in text:
+            print("Monster Found:",text)
+            count = 1
+    if count != 1:
+        print("Monster not found")
+Monster("monsterdatabase.txt")
